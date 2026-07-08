@@ -34,6 +34,14 @@
   .off{flex:0 0 auto;background:var(--deep);color:#fff;font-weight:800;font-size:13px;padding:7px 12px;border-radius:999px;white-space:nowrap}
   .off:empty{display:none}
   .line{font-size:14.5px;margin:12px 0 0;font-variant-numeric:tabular-nums} .line b{color:var(--deep)} .line s{color:var(--muted);font-size:13px} .sv{color:var(--sun);font-weight:800}
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:20px}
+  @media(max-width:560px){.cols{grid-template-columns:1fr;gap:16px}}
+  .colh{font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;margin-bottom:10px;color:var(--deep)}
+  .cols ul{margin:0;padding:0;list-style:none}
+  .cols li{position:relative;padding-left:20px;margin-bottom:8px;font-size:13.5px;line-height:1.5}
+  .perks li::before{content:"\2713";position:absolute;left:0;color:var(--sea);font-weight:800}
+  .todo li::before{content:"\2192";position:absolute;left:0;color:var(--sun);font-weight:800}
+  .vibe{font-style:italic;font-family:Georgia,serif;color:var(--deep);font-size:15px;line-height:1.5;border-top:1px solid var(--line);padding-top:16px;margin-top:18px}
   footer{text-align:center;color:var(--muted);font-size:12.5px;line-height:1.7;margin-top:26px}
   .empty{text-align:center;color:var(--muted);padding:30px;font-style:italic}
 </style></head><body>
@@ -56,6 +64,11 @@
     <div class="body">
       <div class="head"><div><div class="place">Marco Island, FL</div><h2>JW Marriott Marco Island Beach Resort</h2></div><span class="off"></span></div>
       <p class="line"></p>
+      <div class="cols">
+        <div class="perks"><div class="colh">What's included</div><ul><li>Private 3-mile Gulf beach</li><li>Multiple pools + kids splash</li><li>10K Alley bowling & arcade</li><li>Spa by JW & two golf courses</li></ul></div>
+        <div class="todo"><div class="colh">Things to do</div><ul><li>Shelling — Marco's famous for it</li><li>Dolphin & sunset cruises</li><li>Jet ski, parasail, kayak</li><li>Everglades airboat day trip</li><li>Kids' club</li></ul></div>
+      </div>
+      <div class="vibe">The easy family beach week — fly into Fort Myers, 45 min to the sand.</div>
     </div>
   </section>
   <section class="card" data-seasons='summer fall' data-deal='{"summer": {"r": "Aug 30\u2013Sep 3", "m": 129, "s": 419, "p": 69}, "fall": {"r": "Sep 12\u201316", "m": 129, "s": 411, "p": 69}}'>
@@ -63,6 +76,11 @@
     <div class="body">
       <div class="head"><div><div class="place">Waikiki, Hawaii</div><h2>Sheraton Waikiki Beach Resort</h2></div><span class="off"></span></div>
       <p class="line"></p>
+      <div class="cols">
+        <div class="perks"><div class="colh">What's included</div><ul><li>Right on Waikiki Beach</li><li>Infinity pool + the Superpool</li><li>Ocean-view rooms toward Diamond Head</li><li>Walk to shopping & food</li></ul></div>
+        <div class="todo"><div class="colh">Things to do</div><ul><li>Learn to surf on Waikiki</li><li>Hike Diamond Head at sunrise</li><li>Pearl Harbor day trip</li><li>Sunset catamaran</li><li>Luau</li></ul></div>
+      </div>
+      <div class="vibe">Hawaii made easy — on the most famous beach in the islands, everything walkable.</div>
     </div>
   </section>
   <section class="card" data-seasons='summer fall' data-deal='{"summer": {"r": "Aug 9\u201313", "m": 104, "s": 322, "p": 68}, "fall": {"r": "Oct 1\u20135", "m": 104, "s": 356, "p": 71}}'>
@@ -70,6 +88,11 @@
     <div class="body">
       <div class="head"><div><div class="place">Palm Beach, FL</div><h2>Palm Beach Marriott Singer Island Beach Resort & Spa</h2></div><span class="off"></span></div>
       <p class="line"></p>
+      <div class="cols">
+        <div class="perks"><div class="colh">What's included</div><ul><li>All-suite & oceanfront</li><li>Balconies over the Atlantic</li><li>Beachfront pool</li><li>Kitchens in the suites</li></ul></div>
+        <div class="todo"><div class="colh">Things to do</div><ul><li>Snorkel Peanut Island</li><li>Paddleboard the Intracoastal</li><li>Worth Ave shopping</li><li>Fishing charters</li></ul></div>
+      </div>
+      <div class="vibe">Quieter Atlantic-side beach with room to spread out.</div>
     </div>
   </section>
   <section class="card" data-seasons='summer fall' data-deal='{"summer": {"r": "Jul 5\u20139", "m": 94, "s": 273, "p": 66}, "fall": {"r": "Sep 7\u201311", "m": 94, "s": 207, "p": 55}}'>
@@ -77,6 +100,11 @@
     <div class="body">
       <div class="head"><div><div class="place">Palm Beach, FL</div><h2>Marriott's Ocean Pointe</h2></div><span class="off"></span></div>
       <p class="line"></p>
+      <div class="cols">
+        <div class="perks"><div class="colh">What's included</div><ul><li>Villa-style suites</li><li>Full kitchens & laundry</li><li>Multiple oceanfront pools</li><li>Tennis on-site</li></ul></div>
+        <div class="todo"><div class="colh">Things to do</div><ul><li>Beach + Peanut Island snorkel</li><li>Kayak the Intracoastal</li><li>Palm Beach day trips</li><li>Fishing</li></ul></div>
+      </div>
+      <div class="vibe">Condo-style space on the sand — cook in, spread out.</div>
     </div>
   </section>
   <section class="card" data-seasons='summer fall' data-deal='{"summer": {"r": "Jul 26\u201330", "m": 109, "s": 303, "p": 64}, "fall": {"r": "Sep 1\u20135", "m": 109, "s": 262, "p": 58}}'>
@@ -84,6 +112,11 @@
     <div class="body">
       <div class="head"><div><div class="place">Waikiki, Hawaii</div><h2>Waikiki Beach Marriott Resort & Spa</h2></div><span class="off"></span></div>
       <p class="line"></p>
+      <div class="cols">
+        <div class="perks"><div class="colh">What's included</div><ul><li>Steps from Waikiki (Diamond Head end)</li><li>Two pools</li><li>Ocean-view rooms</li><li>On-site luau (Rock-A-Hula)</li></ul></div>
+        <div class="todo"><div class="colh">Things to do</div><ul><li>Surf lessons</li><li>Diamond Head hike next door</li><li>Pearl Harbor</li><li>Luau on-site</li><li>Snorkel & sails</li></ul></div>
+      </div>
+      <div class="vibe">The quieter end of Waikiki, right under Diamond Head.</div>
     </div>
   </section>
   <section class="card" data-seasons='summer fall' data-deal='{"summer": {"r": "Jul 7\u201311", "m": 104, "s": 304, "p": 66}, "fall": {"r": "Sep 27\u2013Oct 1", "m": 104, "s": 368, "p": 72}}'>
@@ -91,6 +124,11 @@
     <div class="body">
       <div class="head"><div><div class="place">South Beach, Miami</div><h2>Marriott Stanton South Beach</h2></div><span class="off"></span></div>
       <p class="line"></p>
+      <div class="cols">
+        <div class="perks"><div class="colh">What's included</div><ul><li>Directly on South Beach sand</li><li>Two pools + cabanas</li><li>Oceanfront rooms</li><li>Art Deco heart of SoBe</li></ul></div>
+        <div class="todo"><div class="colh">Things to do</div><ul><li>South Beach & Ocean Drive</li><li>Wynwood art walls</li><li>Boat & jet-ski</li><li>Everglades day trip</li><li>Nightlife nearby</li></ul></div>
+      </div>
+      <div class="vibe">The lively one — beach by day, Art Deco + food scene by night.</div>
     </div>
   </section>
   <section class="card" data-seasons='summer fall' data-deal='{"summer": {"r": "Jul 27\u201331", "m": 179, "s": 487, "p": 63}, "fall": {"r": "Oct 1\u20135", "m": 179, "s": 449, "p": 60}}'>
@@ -98,6 +136,11 @@
     <div class="body">
       <div class="head"><div><div class="place">Waikiki, Hawaii</div><h2>Moana Surfrider, A Westin Resort & Spa, Waikiki Beach</h2></div><span class="off"></span></div>
       <p class="line"></p>
+      <div class="cols">
+        <div class="perks"><div class="colh">What's included</div><ul><li>Historic beachfront landmark</li><li>Oceanfront banyan courtyard</li><li>On the sand</li><li>Spa & afternoon tea</li></ul></div>
+        <div class="todo"><div class="colh">Things to do</div><ul><li>Surf under the century-old banyan</li><li>Diamond Head</li><li>Pearl Harbor</li><li>Sunset catamaran</li><li>Historic high tea</li></ul></div>
+      </div>
+      <div class="vibe">The storybook Waikiki — a 1901 beachfront classic.</div>
     </div>
   </section>
   <section class="card" data-seasons='summer fall' data-deal='{"summer": {"r": "Aug 30\u2013Sep 3", "m": 219, "s": 593, "p": 63}, "fall": {"r": "Sep 1\u20135", "m": 219, "s": 770, "p": 72}}'>
@@ -105,6 +148,11 @@
     <div class="body">
       <div class="head"><div><div class="place">Naples, FL</div><h2>The Ritz-Carlton, Naples</h2></div><span class="off"></span></div>
       <p class="line"></p>
+      <div class="cols">
+        <div class="perks"><div class="colh">What's included</div><ul><li>AAA Five-Diamond, on the beach</li><li>Multiple pools</li><li>World-class spa</li><li>Kids' club & programs</li></ul></div>
+        <div class="todo"><div class="colh">Things to do</div><ul><li>Shelling & dolphin cruises</li><li>Naples Pier + 5th Ave</li><li>Everglades</li><li>Golf & tennis</li><li>Sunset sails</li></ul></div>
+      </div>
+      <div class="vibe">The splurge — five-diamond on a soft Gulf beach, still a real deal.</div>
     </div>
   </section>
   <section class="card" data-seasons='summer fall' data-deal='{"summer": {"r": "Jul 12\u201316", "m": 174, "s": 411, "p": 58}, "fall": {"r": "Sep 6\u201310", "m": 174, "s": 499, "p": 65}}'>
@@ -112,6 +160,11 @@
     <div class="body">
       <div class="head"><div><div class="place">Key Biscayne, Miami</div><h2>The Ritz-Carlton Key Biscayne, Miami</h2></div><span class="off"></span></div>
       <p class="line"></p>
+      <div class="cols">
+        <div class="perks"><div class="colh">What's included</div><ul><li>Oceanfront on a barrier island</li><li>Huge pool complex</li><li>Spa & tennis center</li><li>Kids' program</li></ul></div>
+        <div class="todo"><div class="colh">Things to do</div><ul><li>Beach + bike the island</li><li>Bill Baggs park & lighthouse</li><li>Crandon Park</li><li>Boat tours</li><li>Miami nearby</li></ul></div>
+      </div>
+      <div class="vibe">Island calm minutes from Miami.</div>
     </div>
   </section>
   <section class="card" data-seasons='summer fall' data-deal='{"summer": {"r": "Jul 5\u20139", "m": 104, "s": 359, "p": 71}, "fall": {"r": "Sep 7\u201311", "m": 104, "s": 241, "p": 57}}'>
@@ -119,6 +172,11 @@
     <div class="body">
       <div class="head"><div><div class="place">Hilton Head, SC</div><h2>The Westin Hilton Head Island Resort & Spa</h2></div><span class="off"></span></div>
       <p class="line"></p>
+      <div class="cols">
+        <div class="perks"><div class="colh">What's included</div><ul><li>Oceanfront on Port Royal</li><li>Three pools</li><li>Beach, spa & golf</li><li>Bikes for everyone</li></ul></div>
+        <div class="todo"><div class="colh">Things to do</div><ul><li>Bike the beach & trails</li><li>Kayak the salt marsh</li><li>Dolphin tours</li><li>Golf</li><li>Harbour Town</li></ul></div>
+      </div>
+      <div class="vibe">Classic Southern beach — bikes, marsh, golf, wide flat shore.</div>
     </div>
   </section></div>
   <div class="grouph">All-inclusive <span style="font-size:13px;color:var(--muted)">· food + drinks + activities · passport</span></div>
@@ -129,6 +187,11 @@
     <div class="body">
       <div class="head"><div><div class="place">Punta Cana · All-Inclusive</div><h2>Royalton Splash Punta Cana, An Autograph Collection All-Inclusive Resort & Casino</h2></div><span class="off"></span></div>
       <p class="line"></p>
+      <div class="cols">
+        <div class="perks"><div class="colh">All-inclusive — included</div><ul><li>All meals + snacks, unlimited drinks</li><li>On-site WATER PARK</li><li>Kids' club & splash zones</li><li>Pools, beach & nightly shows</li><li>Non-motorized watersports</li></ul></div>
+        <div class="todo"><div class="colh">Things to do</div><ul><li>The water park all day</li><li>Saona Island catamaran</li><li>Hoyo Azul cenote & zipline</li><li>Snorkel the reef</li><li>Casino at night</li></ul></div>
+      </div>
+      <div class="vibe">Best-value all-inclusive — a water park + everything included, cheap per night.</div>
     </div>
   </section>
   <section class="card" data-seasons='summer fall' data-deal='{"summer": {"r": "Aug 31\u2013Sep 4", "m": 159, "s": 161, "p": 1}, "fall": {"r": "Sep 20\u201324", "m": 147, "s": 149, "p": 1}}'>
@@ -136,6 +199,11 @@
     <div class="body">
       <div class="head"><div><div class="place">Punta Cana · All-Inclusive</div><h2>Royalton Punta Cana, An Autograph Collection All-Inclusive Resort & Casino</h2></div><span class="off"></span></div>
       <p class="line"></p>
+      <div class="cols">
+        <div class="perks"><div class="colh">All-inclusive — included</div><ul><li>All meals + unlimited drinks</li><li>Multiple restaurants & bars</li><li>Kids' club</li><li>Pools, beach & entertainment</li><li>Sports bar & casino</li></ul></div>
+        <div class="todo"><div class="colh">Things to do</div><ul><li>Saona Island day trip</li><li>Snorkel & catamaran</li><li>Golf nearby</li><li>Cap Cana marina</li><li>Nightly shows</li></ul></div>
+      </div>
+      <div class="vibe">Classic Punta Cana all-inclusive — sink into the beach, everything's handled.</div>
     </div>
   </section>
   <section class="card" data-seasons='summer fall' data-deal='{"summer": {"r": "Aug 30\u2013Sep 3", "m": 164, "s": 166, "p": 1}, "fall": {"r": "Sep 1\u20135", "m": 164, "s": 166, "p": 1}}'>
@@ -143,6 +211,11 @@
     <div class="body">
       <div class="head"><div><div class="place">Cancun · All-Inclusive</div><h2>Royalton Riviera Cancun, An Autograph Collection All-Inclusive Resort & Casino</h2></div><span class="off"></span></div>
       <p class="line"></p>
+      <div class="cols">
+        <div class="perks"><div class="colh">All-inclusive — included</div><ul><li>All meals + unlimited drinks</li><li>DiveIn poolside movies</li><li>Kids' club & teens zone</li><li>Pools, beach, entertainment</li><li>Watersports</li></ul></div>
+        <div class="todo"><div class="colh">Things to do</div><ul><li>Tulum & Chichén Itzá day trips</li><li>Swim a cenote</li><li>Xcaret eco-park</li><li>Snorkel the reef</li><li>Isla Mujeres</li></ul></div>
+      </div>
+      <div class="vibe">Riviera Maya base camp — Mayan ruins and cenotes on your doorstep.</div>
     </div>
   </section>
   <section class="card" data-seasons='summer fall' data-deal='{"summer": {"r": "Aug 30\u2013Sep 3", "m": 171, "s": 172, "p": 1}, "fall": {"r": "Sep 1\u20135", "m": 178, "s": 179, "p": 1}}'>
@@ -150,6 +223,11 @@
     <div class="body">
       <div class="head"><div><div class="place">Cancun · All-Inclusive</div><h2>Royalton Splash Riviera Cancun, An Autograph Collection All-Inclusive Resort</h2></div><span class="off"></span></div>
       <p class="line"></p>
+      <div class="cols">
+        <div class="perks"><div class="colh">All-inclusive — included</div><ul><li>All meals + unlimited drinks</li><li>On-site WATER PARK</li><li>Kids' & teens' clubs</li><li>Pools, beach, shows</li><li>Watersports</li></ul></div>
+        <div class="todo"><div class="colh">Things to do</div><ul><li>Water park all day</li><li>Xcaret & Xel-Há parks</li><li>Cenote swims</li><li>Tulum ruins</li><li>Snorkel the reef</li></ul></div>
+      </div>
+      <div class="vibe">Water park + all-inclusive on the Riviera Maya — huge for kids.</div>
     </div>
   </section>
   <section class="card" data-seasons='summer fall' data-deal='{"summer": {"r": "Aug 30\u2013Sep 3", "m": 192, "s": 193, "p": 1}, "fall": {"r": "Sep 7\u201311", "m": 184, "s": 186, "p": 1}}'>
@@ -157,6 +235,11 @@
     <div class="body">
       <div class="head"><div><div class="place">Cancun · All-Inclusive</div><h2>Planet Hollywood Cancun by Royalton, An Autograph Collection All-Inclusive Resort</h2></div><span class="off"></span></div>
       <p class="line"></p>
+      <div class="cols">
+        <div class="perks"><div class="colh">All-inclusive — included</div><ul><li>All meals + unlimited drinks</li><li>Hollywood-themed fun</li><li>Sensoryland kids' zone</li><li>Pools, beach, live shows</li><li>Arcade & sports</li></ul></div>
+        <div class="todo"><div class="colh">Things to do</div><ul><li>Cancún beaches & nightlife</li><li>Isla Mujeres ferry</li><li>Cenotes & Tulum</li><li>Snorkel</li><li>Xcaret</li></ul></div>
+      </div>
+      <div class="vibe">Playful, movie-themed all-inclusive — energy and entertainment for the family.</div>
     </div>
   </section>
   <section class="card" data-seasons='summer fall' data-deal='{"summer": {"r": "Aug 10\u201314", "m": 245, "s": 205, "p": 0}, "fall": {"r": "Sep 27\u2013Oct 1", "m": 258, "s": null, "p": 0}}'>
@@ -164,6 +247,11 @@
     <div class="body">
       <div class="head"><div><div class="place">Riviera · All-Inclusive</div><h2>Delta Hotels Riviera Nayarit, An All-Inclusive Resort</h2></div><span class="off"></span></div>
       <p class="line"></p>
+      <div class="cols">
+        <div class="perks"><div class="colh">All-inclusive — included</div><ul><li>All meals + unlimited drinks</li><li>Beachfront pools</li><li>Kids' activities</li><li>Nightly entertainment</li><li>Watersports</li></ul></div>
+        <div class="todo"><div class="colh">Things to do</div><ul><li>Puerto Vallarta old town</li><li>Marietas Islands boat trip</li><li>Sayulita surf town</li><li>Whale watching (winter)</li><li>Zipline</li></ul></div>
+      </div>
+      <div class="vibe">Laid-back Riviera Nayarit — Vallarta charm with everything included.</div>
     </div>
   </section>
   <section class="card" data-seasons='summer fall' data-deal='{"summer": {"r": "Aug 10\u201314", "m": 261, "s": 322, "p": 19}, "fall": {"r": "Sep 14\u201318", "m": 235, "s": 237, "p": 1}}'>
@@ -171,6 +259,11 @@
     <div class="body">
       <div class="head"><div><div class="place">Saint Lucia · All-Inclusive</div><h2>Royalton Saint Lucia, An Autograph Collection All-Inclusive Resort</h2></div><span class="off"></span></div>
       <p class="line"></p>
+      <div class="cols">
+        <div class="perks"><div class="colh">All-inclusive — included</div><ul><li>All meals + unlimited drinks</li><li>Views of the Pitons</li><li>Pools, beach & spa</li><li>Kids' club</li><li>Watersports</li></ul></div>
+        <div class="todo"><div class="colh">Things to do</div><ul><li>Hike/see the Pitons</li><li>Sulphur Springs mud baths</li><li>Rainforest & waterfalls</li><li>Snorkel Anse Chastanet</li><li>Catamaran</li></ul></div>
+      </div>
+      <div class="vibe">St. Lucia's dramatic Pitons + all-inclusive ease — the stunner of the list.</div>
     </div>
   </section>
   <section class="card" data-seasons='summer fall' data-deal='{"summer": {"r": "Jul 20\u201324", "m": 299, "s": 438, "p": 32}, "fall": {"r": "Sep 1\u20135", "m": 299, "s": 396, "p": 24}}'>
@@ -178,6 +271,11 @@
     <div class="body">
       <div class="head"><div><div class="place">Cancun · All-Inclusive</div><h2>Marriott Cancun, An All-Inclusive Resort</h2></div><span class="off"></span></div>
       <p class="line"></p>
+      <div class="cols">
+        <div class="perks"><div class="colh">All-inclusive — included</div><ul><li>All meals + unlimited drinks</li><li>Beachfront pools</li><li>Kids' club & tennis</li><li>Nightly entertainment</li><li>Watersports</li></ul></div>
+        <div class="todo"><div class="colh">Things to do</div><ul><li>Cancún beaches</li><li>Isla Mujeres</li><li>Chichén Itzá & cenotes</li><li>Snorkel the reef</li><li>Xcaret</li></ul></div>
+      </div>
+      <div class="vibe">The Marriott-run all-inclusive in Cancún — reliable, and the deepest AI discount.</div>
     </div>
   </section>
   <section class="card" data-seasons='summer fall' data-deal='{"summer": {"r": "Jul 25\u201329", "m": 299, "s": 283, "p": 0}, "fall": {"r": "Sep 1\u20135", "m": 299, "s": 283, "p": 0}}'>
@@ -185,6 +283,11 @@
     <div class="body">
       <div class="head"><div><div class="place">Vallarta · All-Inclusive</div><h2>The Westin Playa Vallarta, an All-Inclusive Resort</h2></div><span class="off"></span></div>
       <p class="line"></p>
+      <div class="cols">
+        <div class="perks"><div class="colh">All-inclusive — included</div><ul><li>All meals + unlimited drinks</li><li>Westin Heavenly beds</li><li>Beachfront pools</li><li>Kids' club</li><li>Watersports</li></ul></div>
+        <div class="todo"><div class="colh">Things to do</div><ul><li>Puerto Vallarta Malecón</li><li>Marietas Islands</li><li>Sayulita</li><li>Zipline & ATV</li><li>Whale watching (winter)</li></ul></div>
+      </div>
+      <div class="vibe">Westin comfort, all-inclusive, on Vallarta's beach.</div>
     </div>
   </section>
   <section class="card" data-seasons='summer fall' data-deal='{"summer": {"r": "Aug 31\u2013Sep 4", "m": 313, "s": 388, "p": 19}, "fall": {"r": "Oct 25\u201329", "m": 299, "s": 352, "p": 15}}'>
@@ -192,6 +295,11 @@
     <div class="body">
       <div class="head"><div><div class="place">Los Cabos · All-Inclusive</div><h2>Hacienda del Mar Los Cabos, An Autograph Collection All-Inclusive Resort</h2></div><span class="off"></span></div>
       <p class="line"></p>
+      <div class="cols">
+        <div class="perks"><div class="colh">All-inclusive — included</div><ul><li>All meals + unlimited drinks</li><li>Golf & spa</li><li>Beachfront pools</li><li>Kids' activities</li><li>Watersports</li></ul></div>
+        <div class="todo"><div class="colh">Things to do</div><ul><li>Cabo San Lucas & El Arco</li><li>Whale watching (winter)</li><li>Snorkel Chileno Bay</li><li>Golf</li><li>Sunset sail the marina</li></ul></div>
+      </div>
+      <div class="vibe">Cabo all-inclusive — desert-meets-sea, golf, and the famous Arch nearby.</div>
     </div>
   </section></div>
   <footer>Prices per-night, lowest 4-night average on our associate rate. Availability moves — confirm live before booking. 💛</footer>
